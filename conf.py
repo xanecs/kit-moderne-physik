@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Moderne Physik für Informatiker'
+project = u'Moderne Physik für Informatiker'
 author = 'Leon Bentrup'
 
 # The short X.Y version

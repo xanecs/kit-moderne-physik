@@ -129,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'ModernePhysikfrInformatiker.tex', 'Moderne Physik für Informatiker Documentation',
+    (master_doc, 'ModernePhysikfrInformatiker.tex', u'Moderne Physik für Informatiker Documentation',
      'Leon Bentrup', 'manual'),
 ]
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'modernephysikfrinformatiker', 'Moderne Physik für Informatiker Documentation',
+    (master_doc, 'modernephysikfrinformatiker', u'Moderne Physik für Informatiker Documentation',
      [author], 1)
 ]
 
@@ -150,7 +150,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'ModernePhysikfrInformatiker', 'Moderne Physik für Informatiker Documentation',
+    (master_doc, 'ModernePhysikfrInformatiker', u'Moderne Physik für Informatiker Documentation',
      author, 'ModernePhysikfrInformatiker', 'Mitschrieb der Vorlesung.',
      'Miscellaneous'),
 ]

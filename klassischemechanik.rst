@@ -87,3 +87,185 @@ Spannen, loslassen :math:`\Rightarrow \vec{v_1},\vec{v_2}`
 hängt nicht von Kraft oder Feder ab.
 
 :math:`\rightarrow` Definition Masse als **Basiseinheit**
+
+Wichtige Beispiele für Kräfte
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Gravitationskraft**
+
+schwere Masse = träge Masse
+
+:math:`\vec{r}` Ort von :math:`m` im System mit :math:`M` im Ursprung.
+
+.. math::
+    \vec{F} &= - \gamma \frac{Mm}{r^2}\hat{r}
+
+    \hat{r} &= \frac{\vec{r}}{{\lvert}r{\rvert}}
+
+Speziell auf der Erdoberfläche
+
+.. math::
+    r &= r_e \approx 6000\mathrm{km}
+
+    M &= M_e
+
+    \gamma &= \text{bekannt (Newtonsche Gravitationskonstante)}
+
+    &\Rightarrow \vec{F} = \underbrace{(\gamma\frac{M}{r^2})}_{=g=9.81\mathrm{ms}^{-2}\approx 10\mathrm{ms}^{-2}}m
+
+
+**Coulombkraft**
+
+.. math::
+    \vec{F} = \frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}\hat{r}
+
+mit Ladungen :math:`q_1` und :math:`q_2`
+
+
+(beides Zentralkräfte)
+
+**Lorentzkraft**
+
+Kraft auf geladene Teilchen (Ladung :math:`e`) im elektromagnetischen Feld.
+
+:math:`\vec{E}`: elektrisches Feld,
+:math:`\vec{B}`: magnetisches Feld
+
+.. math::
+    \vec{F} &= e(\vec{E}+\vec{V}\times\vec{B})
+
+    (\vec{F} &= m\vec{a} = m \ddot{\vec{r}} = e(\vec{E}+\ddot{\vec{r}}\times\vec{B}))
+
+**harmonischer Oszillator**
+
+lineare, stets negative Kraft
+
+.. math::
+    F = - \alpha{\lvert}x{\rvert}<0
+
+:math:`\Rightarrow` Schwingung um Ruhelage
+
+wichtiges math. Beispiel für gebundene Systeme.
+
+Inertialsysteme, Nichtinertialsysteme
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Im Inertialsystem:
+
+    Kräftefrei = gleichförmige, gradlinige Bewegung
+
+Systeme :math:`\Sigma`, :math:`\Sigma^\prime` vollkommen gleichwertig,
+d.H. physikalische Gesetze sind **kovariant** unter
+Galilei-Transformationen:
+
+.. math::
+    \vec{r}^\prime = \vec{r}+\vec{v_0}t
+
+also wenn sich :math:`\Sigma`, :math:`\Sigma^\prime` mit :math:`\vec{v_0}`
+realtiv zueinander bewegen.
+
+(Galilei-Invarianz)
+
+Später :math:`\rightarrow` Lorentz-Invarianz (SRT)
+
+In **beschleunigten Bezugssystemen** gibt es zusätzlich
+sogenannte Scheinkräfte. z.B. Zentrifugalkraft, Corioliskraft.
+
+**Weitere spezielle Themen**:
+
+- Schwingung, mit Dämpfung
+- Mehrere Massepunkte, Eigenschwingungen
+- starre Körper
+    :math:`\rightarrow` Bewegung von Schwerpunkt und Rotation (Kreiselbewegung)
+
+
+Lagrange-Mechanik
+-----------------
+
+Ausgangspunkt: Newton
+
+.. math::
+    m\ddot{\vec{r}} = \vec{F_i} + \sum^{N}_{i\ne j}\vec{F_{ij}} \text{ mit } i = 1,...,N
+
+:math:`\vec{F_i}`: externe Kräfte auf Massepunkt :math:`i`.
+
+:math:`\vec{F_{ij}}`: interne Kräfte der beteiligten Teilchen, paarweise.
+
+:math:`\rightarrow` Problem vollständig formuliert:
+
+    :math:`3N` gewöhnliche Differentialgleichungen 2. Ordnung
+    
+    Lösbar mit entsprechenden Anfangsbedingungen
+
+**Probleme**
+
+- Formulierung in Koordinaten :math:`(X, Y, Z)` meist zu kompliziert.
+- Meist Probleme mit stark eingeschränlter Geometrie, z.B. Perle auf Kreisförmigem Draht
+
+    :math:`\rightarrow` die :math:`\vec{F_{ij}}` beschreiben geometrische, fest
+    vorgegebene Beziehungen auf zu komplizierte Weise.
+
+    :math:`\rightarrow` **Zwangskräfte**
+    (z.B. zwischen Perle und Draht) bewirken **Zwangsbedingungen**
+    ("Perle bleibt auf Draht"), die oft direkt *viel einfacher*
+    zu Formulieren sind.
+
+:math:`\rightarrow` Ziel der Lagrange-Mechanik:
+Elimination der Zwangskräfte,
+gelingt durch **verallgemeinerte Koordinaten**
+(immer weniger als ursprünglich).
+
+Dazu verschiedene Zwangsbedingungen unterscheiden:
+
+**holonom**
+
+.. math:
+    f_\nu(\vec{r_i},t)=0 & \nu = 1,...,p
+
+..
+
+    **holonom-skleronom**
+
+    .. math::
+        \frac{\partial f_\nu}{\partial t} = 0 \text{ mit } \nu = 1,...,p
+    
+    Keine Zeitabhängigkeit
+
+    **holonom-rheonom**
+
+    .. math::
+        \frac{\partial f_\nu}{\partial t} \ne 0
+
+**nicht-holonom**
+
+sonst
+
+    **als Ungleichungen**
+
+    :math:`\rightarrow` Keine eliminierbaren Bedingungen
+
+    **differential, aber nicht integrierbar**
+
+    z.B. mit Geschwindigkeiten
+
+
+**Beispiele**
+
+*holonom-skleronom:* 
+
+Hantel
+
+.. math::
+    (X_1-X_2)^2+(Y_1-Y_2)^2+(Z_1-Z_2)^2-l^2=0
+
+Teilchen auf Kugel
+
+.. math::
+    X^2+Y^2+Z^2-R^2=0
+
+*holonom-rheonom*
+
+.. math::
+    \frac{Z}{X} &=\tan \varphi = \tan \varphi(t)
+
+    f(X,Z,t) &= \frac{Z}{X}-\tan \varphi(t)=0

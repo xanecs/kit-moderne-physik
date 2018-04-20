@@ -95,6 +95,8 @@ Wichtige Beispiele für Kräfte
 
 schwere Masse = träge Masse
 
+.. figure:: figure002.svg
+
 :math:`\vec{r}` Ort von :math:`m` im System mit :math:`M` im Ursprung.
 
 .. math::
@@ -103,6 +105,9 @@ schwere Masse = träge Masse
     \hat{r} &= \frac{\vec{r}}{{\lvert}r{\rvert}}
 
 Speziell auf der Erdoberfläche
+
+.. figure:: figure003.svg
+    :figwidth: 50%
 
 .. math::
     r &= r_e \approx 6000\mathrm{km}
